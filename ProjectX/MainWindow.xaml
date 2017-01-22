@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="button" Content="Load SQLite" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Width="208" Click="button_Click"/>
+
     </Grid>
 </Window>

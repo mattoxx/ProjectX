@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
+using System.Data.Linq;
 
 namespace ProjectX
 {
@@ -23,6 +25,24 @@ namespace ProjectX
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            connectToSQLite();
+        }
+
+        private void connectToSQLite()
+        {
+            var conn = new SQLiteConnection(@"data source=C:\Users\Martin\Documents\Visual Studio 2015\DBSQLite\dbTest.db;Version=3;");
+            conn.Open();
+
+            var context = new DataContext(conn);
+            var x = "select * from Screens";
+            SQLiteCommand command = new SQLiteCommand(x, conn);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            
         }
     }
 }
