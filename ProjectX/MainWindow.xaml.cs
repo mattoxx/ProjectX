@@ -120,16 +120,16 @@ namespace ProjectX
 
 
 
-        [Table]
-        public class Screens
-        {
-            [Column]
-            public int Id { get; set; }
-            [Column]
-            public byte[] Screen { get; set; }
-            [Column]
-            public string Desc { get; set; }
-        }
+        //[Table]
+        //public class Screens
+        //{
+        //    [Column]
+        //    public int Id { get; set; }
+        //    [Column]
+        //    public byte[] Screen { get; set; }
+        //    [Column]
+        //    public string Desc { get; set; }
+        //}
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
