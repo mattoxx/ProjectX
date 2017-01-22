@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectX"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button" Content="Load SQLite" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Width="208" Click="button_Click"/>
+        Title="ProjectX" Height="499.046" Width="375.211" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,1">
+        <Button x:Name="button" Content="Load SQLite" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Click="button_Click"/>
+        <Label x:Name="label" Content="Image Description: " HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="244"/>
+        <Image x:Name="glass" Margin="10,123,10,10"/>
+        <Button x:Name="button1" Content="Next Img" HorizontalAlignment="Left" Margin="97,88,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Prev Img" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
 
     </Grid>
 </Window>
